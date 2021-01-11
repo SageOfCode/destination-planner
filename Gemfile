@@ -13,10 +13,13 @@ gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
-gem 'jbuilder', '~> 2.5'
+# gem 'jbuilder', '~> 2.5'
+gem 'fast_jsonapi'
 gem 'bootstrap', '~> 4.4.1'
 gem 'bootsnap'
 gem 'jquery-rails'
+gem 'faraday'
+gem 'figaro'
 
 
 group :development, :test do
@@ -29,6 +32,8 @@ group :test do
   gem 'launchy'
   gem 'faker'
   gem 'simplecov'
+  gem 'webmock'
+  gem 'vcr'
 end
 
 group :development do

@@ -6,6 +6,8 @@ class DestinationsController < ApplicationController
   end
 
   def show
+    weather = WeatherFacade.get_current_weather(@destination.zip)
+    @weather = GifFacade.grab_gif(weather)
   end
 
   def new

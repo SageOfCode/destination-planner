@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=35f4e24af0e80f4750770e5fd8bd7b07&units=imperial&zip=80204
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 03 Jan 2021 18:20:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '457'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?units=imperial&zip=80204"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-105.03,"lat":39.73},"weather":[{"id":801,"main":"Clouds","description":"few
+        clouds","icon":"02d"}],"base":"stations","main":{"temp":46.13,"feels_like":37.72,"temp_min":42.01,"temp_max":48.2,"pressure":1011,"humidity":23},"visibility":10000,"wind":{"speed":4.7,"deg":40},"clouds":{"all":20},"dt":1609698008,"sys":{"type":1,"id":3444,"country":"US","sunrise":1609683679,"sunset":1609717675},"timezone":-25200,"id":0,"name":"Denver","cod":200}'
+  recorded_at: Sun, 03 Jan 2021 18:20:17 GMT
+- request:
+    method: get
+    uri: https://api.giphy.com/v1/gifs/search?api_key=Kaz9KVStNOaoAfl8XijRV8MycXXagt9P&limit=1&q=few%20clouds
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1413'
+      Content-Type:
+      - application/json
+      X-Response-Time:
+      - 42ms
+      X-Giphy-M-Total-Count:
+      - '4344'
+      X-Cachiness-Shield-Rule:
+      - giphy_api_search_long_ttl
+      X-Cachiness-Shield-Desired-Ttl:
+      - 21600s
+      X-Cachiness-Shield-Actual-Ttl:
+      - '21600.000'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Authorization, Content-Type, Accept to Content-Type, Accept, x-requested-with,
+        cache-control, X-GIPHY-SDK-NAME, X-GIPHY-SDK-VERSION, X-GIPHY-SDK-PLATFORM
+      X-Rule-Debug:
+      - '1'
+      X-Cachiness-Edge-Rule:
+      - giphy_api_search_long_ttl
+      X-Cachiness-Edge-Desired-Ttl:
+      - 21600s
+      X-Cachiness-Edge-Actual-Ttl:
+      - '21600.000'
+      X-Cachiness-Edge-Age:
+      - '0'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sun, 03 Jan 2021 18:20:18 GMT
+      Age:
+      - '1'
+      Cache-Control:
+      - max-age=30
+      Strict-Transport-Security:
+      - max-age=86400
+      X-Served-By:
+      - cache-bwi5123-BWI, cache-den8263-DEN
+      X-Cache-Hits:
+      - 0, 1
+      X-Timer:
+      - S1609698018.115121,VS0,VE1
+      Vary:
+      - Accept-Encoding
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"type":"gif","id":"5HK4TiiBeLSZq","url":"https://giphy.com/gifs/clouds-rainbow-5HK4TiiBeLSZq","slug":"clouds-rainbow-5HK4TiiBeLSZq","bitly_gif_url":"http://gph.is/17AZAGS","bitly_url":"http://gph.is/17AZAGS","embed_url":"https://giphy.com/embed/5HK4TiiBeLSZq","username":"","source":"http://javif.tumblr.com/post/46527438985/oh-somewhere-over-the-rainbow","title":"clouds
+        GIF","rating":"g","content_url":"","source_tld":"javif.tumblr.com","source_post_url":"http://javif.tumblr.com/post/46527438985/oh-somewhere-over-the-rainbow","is_sticker":0,"import_datetime":"2013-06-25
+        18:59:58","trending_datetime":"1970-01-01 00:00:00","images":{"original":{"height":"672","width":"500","size":"811698","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy.gif","mp4_size":"293924","mp4":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy.mp4?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy.mp4","webp_size":"321338","webp":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy.webp?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy.webp","frames":"20","hash":"eaf7619c3d7b09362f1cac09fdf9b901"},"downsized":{"height":"672","width":"500","size":"811698","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy.gif"},"downsized_large":{"height":"672","width":"500","size":"811698","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy.gif"},"downsized_medium":{"height":"672","width":"500","size":"811698","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy.gif"},"downsized_small":{"height":"482","width":"358","mp4_size":"51294","mp4":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy-downsized-small.mp4?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy-downsized-small.mp4"},"downsized_still":{"height":"672","width":"500","size":"811698","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy_s.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy_s.gif"},"fixed_height":{"height":"200","width":"149","size":"212487","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/200.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=200.gif","mp4_size":"24740","mp4":"https://media0.giphy.com/media/5HK4TiiBeLSZq/200.mp4?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=200.mp4","webp_size":"48916","webp":"https://media0.giphy.com/media/5HK4TiiBeLSZq/200.webp?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=200.webp"},"fixed_height_downsampled":{"height":"200","width":"149","size":"78512","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/200_d.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=200_d.gif","webp_size":"30650","webp":"https://media0.giphy.com/media/5HK4TiiBeLSZq/200_d.webp?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=200_d.webp"},"fixed_height_small":{"height":"100","width":"75","size":"55034","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/100.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=100.gif","mp4_size":"8205","mp4":"https://media0.giphy.com/media/5HK4TiiBeLSZq/100.mp4?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=100.mp4","webp_size":"21190","webp":"https://media0.giphy.com/media/5HK4TiiBeLSZq/100.webp?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=100.webp"},"fixed_height_small_still":{"height":"100","width":"75","size":"3491","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/100_s.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=100_s.gif"},"fixed_height_still":{"height":"200","width":"149","size":"9895","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/200_s.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=200_s.gif"},"fixed_width":{"height":"269","width":"200","size":"218001","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/200w.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=200w.gif","mp4_size":"39303","mp4":"https://media0.giphy.com/media/5HK4TiiBeLSZq/200w.mp4?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=200w.mp4","webp_size":"71262","webp":"https://media0.giphy.com/media/5HK4TiiBeLSZq/200w.webp?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=200w.webp"},"fixed_width_downsampled":{"height":"269","width":"200","size":"115653","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/200w_d.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=200w_d.gif","webp_size":"51428","webp":"https://media0.giphy.com/media/5HK4TiiBeLSZq/200w_d.webp?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=200w_d.webp"},"fixed_width_small":{"height":"135","width":"100","size":"82593","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/100w.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=100w.gif","mp4_size":"12633","mp4":"https://media0.giphy.com/media/5HK4TiiBeLSZq/100w.mp4?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=100w.mp4","webp_size":"30828","webp":"https://media0.giphy.com/media/5HK4TiiBeLSZq/100w.webp?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=100w.webp"},"fixed_width_small_still":{"height":"135","width":"100","size":"4955","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/100w_s.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=100w_s.gif"},"fixed_width_still":{"height":"269","width":"200","size":"11705","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/200w_s.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=200w_s.gif"},"looping":{"mp4_size":"829614","mp4":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy-loop.mp4?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy-loop.mp4"},"original_still":{"height":"672","width":"500","size":"66869","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy_s.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy_s.gif"},"original_mp4":{"height":"644","width":"480","mp4_size":"293924","mp4":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy.mp4?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy.mp4"},"preview":{"height":"268","width":"199","mp4_size":"18212","mp4":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy-preview.mp4?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy-preview.mp4"},"preview_gif":{"height":"85","width":"63","size":"47860","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy-preview.gif?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy-preview.gif"},"preview_webp":{"height":"294","width":"218","size":"37900","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/giphy-preview.webp?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=giphy-preview.webp"},"480w_still":{"height":"645","width":"480","size":"811698","url":"https://media0.giphy.com/media/5HK4TiiBeLSZq/480w_s.jpg?cid=e06a16ba865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&rid=480w_s.jpg"}},"analytics_response_payload":"e=Z2lmX2lkPTVISzRUaWlCZUxTWnEmZXZlbnRfdHlwZT1HSUZfU0VBUkNIJmNpZD1lMDZhMTZiYTg2NWY2M2puNnFuOXlpM3J6aGY2MnNzZWl5bG5jdTM3NHJqc2NlcDk","analytics":{"onload":{"url":"https://giphy-analytics.giphy.com/simple_analytics?response_id=865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&event_type=GIF_SEARCH&gif_id=5HK4TiiBeLSZq&action_type=SEEN"},"onclick":{"url":"https://giphy-analytics.giphy.com/simple_analytics?response_id=865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&event_type=GIF_SEARCH&gif_id=5HK4TiiBeLSZq&action_type=CLICK"},"onsent":{"url":"https://giphy-analytics.giphy.com/simple_analytics?response_id=865f63jn6qn9yi3rzhf62sseiylncu374rjscep9&event_type=GIF_SEARCH&gif_id=5HK4TiiBeLSZq&action_type=SENT"}}}],"pagination":{"total_count":4344,"count":1,"offset":0},"meta":{"status":200,"msg":"OK","response_id":"865f63jn6qn9yi3rzhf62sseiylncu374rjscep9"}}'
+  recorded_at: Sun, 03 Jan 2021 18:20:18 GMT
+recorded_with: VCR 6.0.0
